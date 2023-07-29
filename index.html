@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WK Sexy Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="stars"></div>
+        <h1>
+            <img src="logo.jpg" alt="W.K SHOP Logo">
+        </h1>
+        <h2>Encontre os melhores produtos aqui!</h2>
+        <div class="busca">
+            <input type="text" placeholder="Digite um produto...">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="carrinho">
+            <p>Carrinho:</p>
+            <ul></ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="tabs">
+            <button class="tablink" onclick="openTab('Lingerie')">Lingerie</button>
+            <button class="tablink" onclick="openTab('SexyShop')">SexyShop</button>
+            <button class="tablink" onclick="openTab('babydoll')">Terceira Aba</button>
+
+            <div id="Lingerie" class="tabcontent">
+                <div class="produtos">
+                    <!-- Produto 1 -->
+                    <!-- Você pode copiar esse bloco de div para inserir outros produtos -->
+                    <!-- Começo do Bloco -->
+                    <div class="produto">
+                        <img src="calamarelo.jpeg" alt="Calcinha Rendada Amarela">
+                        <h2>Calcinha Rendada Amarela</h2>
+                        <p class="preco">R$ 25.00</p>
+                        <div class="size-selection">
+                            <label>Tamanho:</label>
+                            <select>
+								<option value="pp">PP</option>
+								<option value="p">P</option>
+								<option value="m">M</option>
+								<option value="g">G</option>
+								<option value="gg">GG</option>
+								<option value="xg">XG</option>
+								<option value="xgg">XGG</option>
+								<option value="eg">EG</option>
+								<option value="egg">EGG</option>
+                            </select>
+                        </div>
+                        <div class="color-selection">
+                            <label>Cores:</label>
+                            <select>
+                                <option value="amarelo">Amarelo</option>
+								
+                            </select>
+                        </div>
+                        <button class="comprar" data-nome="Calcinha Rendada Amarela" data-preco="25.00">Adicionar</button>
+                    </div>
+					
+					<!-- Fim do Bloco -->
+					
+					<div class="produto">
+                        <img src="calbege.jpg" alt="Calcinha Rendada Bege">
+                        <h2>Calcinha Rendada Bege</h2>
+                        <p class="preco">R$ 25.00</p>
+                        <div class="size-selection">
+                            <label>Tamanho:</label>
+                            <select>
+								<option value="pp">PP</option>
+								<option value="p">P</option>
+								<option value="m">M</option>
+								<option value="g">G</option>
+								<option value="gg">GG</option>
+								<option value="xg">XG</option>
+								<option value="xgg">XGG</option>
+								<option value="eg">EG</option>
+								<option value="egg">EGG</option>
+                            </select>
+                        </div>
+                        <div class="color-selection">
+                            <label>Cores:</label>
+                            <select>
+								<option value="bege">Bege</option>
+                            </select>
+                        </div>
+                        <button class="comprar" data-nome="Calcinha Rendada Bege" data-preco="25.00">Adicionar</button>
+                    </div>
+					
+					<!-- Fim do Bloco -->
+					
+					<div class="produto">
+                        <img src="calpreto.jpg" alt="Calcinha rendada Preta">
+                        <h2>Calcinha rendada Preta</h2>
+                        <p class="preco">R$ 25.00</p>
+                        <div class="size-selection">
+                            <label>Tamanho:</label>
+                            <select>
+								<option value="pp">PP</option>
+								<option value="p">P</option>
+								<option value="m">M</option>
+								<option value="g">G</option>
+								<option value="gg">GG</option>
+								<option value="xg">XG</option>
+								<option value="xgg">XGG</option>
+								<option value="eg">EG</option>
+								<option value="egg">EGG</option>
+                            </select>
+                        </div>
+                        <div class="color-selection">
+                            <label>Cores:</label>
+                            <select>
+								<option value="preto">Preto</option>
+                            </select>
+                        </div>
+                        <button class="comprar" data-nome="Calcinha rendada Preta" data-preco="25.00">Adicionar</button>
+                    </div>
+                    <!-- Fim do Bloco -->
+					<div class="produto">
+                        <img src="calrosa.jpeg" alt="Calcinha rendada Rosa">
+                        <h2>Calcinha rendada Rosa</h2>
+                        <p class="preco">R$ 25.00</p>
+                        <div class="size-selection">
+                            <label>Tamanho:</label>
+                            <select>
+								<option value="pp">PP</option>
+								<option value="p">P</option>
+								<option value="m">M</option>
+								<option value="g">G</option>
+								<option value="gg">GG</option>
+								<option value="xg">XG</option>
+								<option value="xgg">XGG</option>
+								<option value="eg">EG</option>
+								<option value="egg">EGG</option>
+                            </select>
+                        </div>
+                        <div class="color-selection">
+                            <label>Cores:</label>
+                            <select>
+                                <option value="rosa">Rosa</option>
+                            </select>
+                        </div>
+                        <button class="comprar" data-nome="Calcinha rendada Rosa" data-preco="25.00">Adicionar</button>
+                    </div>
+					<!-- Fim do Bloco -->
+					<div class="produto">
+                        <img src="calvermelho.jpg" alt="Calcinha rendada Vermelho">
+                        <h2>Calcinha rendada Vermelho</h2>
+                        <p class="preco">R$ 25.00</p>
+                        <div class="size-selection">
+                            <label>Tamanho:</label>
+                            <select>
+								<option value="pp">PP</option>
+								<option value="p">P</option>
+								<option value="m">M</option>
+								<option value="g">G</option>
+								<option value="gg">GG</option>
+								<option value="xg">XG</option>
+								<option value="xgg">XGG</option>
+								<option value="eg">EG</option>
+								<option value="egg">EGG</option>
+                            </select>
+                        </div>
+                        <div class="color-selection">
+                            <label>Cores:</label>
+                            <select>
+                                <option value="vermelho">Vermelho</option>
+                            </select>
+                        </div>
+                        <button class="comprar" data-nome="Calcinha rendada Vermelho" data-preco="25.00">Adicionar</button>
+                    </div>
+					<!-- Fim do Bloco -->
+					
+                </div>
+            </div>
+
+            <div id="SexyShop" class="tabcontent">
+                <div class="produtos">
+                    <!-- Copie o produto 1 aqui -->
+                    <!-- O mesmo código do bloco de produto acima -->
+					<div class="produto">
+                        <img src="SexyCalAmarelo.jpeg" alt="Calcinha Sexy Amarelo">
+                        <h2>Calcinha Sexy Amarelo</h2>
+                        <p class="preco">R$ 35.00</p>
+                        <div class="size-selection">
+                            <label>Tamanho:</label>
+                            <select>
+								<option value="pp">PP</option>
+								<option value="p">P</option>
+								<option value="m">M</option>
+								<option value="g">G</option>
+								<option value="gg">GG</option>
+								<option value="xg">XG</option>
+								<option value="xgg">XGG</option>
+								<option value="eg">EG</option>
+								<option value="egg">EGG</option>
+                            </select>
+                        </div>
+                        <div class="color-selection">
+                            <label>Cores:</label>
+                            <select>
+                                <option value="amarela">Amarela</option>
+                            </select>
+                        </div>
+                        <button class="comprar" data-nome="Calcinha Sexy Amarelo" data-preco="35.00">Adicionar</button>
+                    </div>
+					<!-- Fim do Bloco -->
+					<div class="produto">
+                        <img src="SexyCalpreto.jpeg" alt="Calcinha Sexy Preto">
+                        <h2>Calcinha Sexy Preto</h2>
+                        <p class="preco">R$ 35.00</p>
+                        <div class="size-selection">
+                            <label>Tamanho:</label>
+                            <select>
+								<option value="pp">PP</option>
+								<option value="p">P</option>
+								<option value="m">M</option>
+								<option value="g">G</option>
+								<option value="gg">GG</option>
+								<option value="xg">XG</option>
+								<option value="xgg">XGG</option>
+								<option value="eg">EG</option>
+								<option value="egg">EGG</option>
+                            </select>
+                        </div>
+                        <div class="color-selection">
+                            <label>Cores:</label>
+                            <select>
+								<option value="preto">Preto</option>
+                            </select>
+                        </div>
+                        <button class="comprar" data-nome="Calcinha Sexy Preto" data-preco="35.00">Adicionar</button>
+                    </div>
+					<!-- Fim do Bloco -->
+					<div class="produto">
+                        <img src="SexyCalVermelho.jpeg" alt="Calcinha Sexy Vermelho">
+                        <h2>Calcinha Sexy Vermelho</h2>
+                        <p class="preco">R$ 35.00</p>
+                        <div class="size-selection">
+                            <label>Tamanho:</label>
+                            <select>
+								<option value="pp">PP</option>
+								<option value="p">P</option>
+								<option value="m">M</option>
+								<option value="g">G</option>
+								<option value="gg">GG</option>
+								<option value="xg">XG</option>
+								<option value="xgg">XGG</option>
+								<option value="eg">EG</option>
+								<option value="egg">EGG</option>
+                            </select>
+                        </div>
+                        <div class="color-selection">
+                            <label>Cores:</label>
+                            <select>
+                                <option value="vermelho">Vermelho</option>
+                            </select>
+                        </div>
+                        <button class="comprar" data-nome="Calcinha Sexy Vermelho" data-preco="35.00">Adicionar</button>
+                    </div>
+					<!-- Fim do Bloco -->
+					
+                </div>
+            </div>
+
+            <div id="babydoll" class="tabcontent">
+                <div class="produtos">
+                    <!-- Copie o produto 1 aqui -->
+                    <!-- O mesmo código do bloco de produto acima -->
+					<div class="produto">
+                        <img src="BabyAzulForte.jpeg" alt="Baby Doll Azul F">
+                        <h2>Baby Doll Azul F</h2>
+                        <p class="preco">R$ 95.00</p>
+                        <div class="size-selection">
+                            <label>Tamanho:</label>
+                            <select>
+								<option value="pp">PP</option>
+								<option value="p">P</option>
+								<option value="m">M</option>
+								<option value="g">G</option>
+								<option value="gg">GG</option>
+								<option value="xg">XG</option>
+								<option value="xgg">XGG</option>
+								<option value="eg">EG</option>
+								<option value="egg">EGG</option>
+                            </select>
+                        </div>
+                        <div class="color-selection">
+                            <label>Cores:</label>
+                            <select>
+                                <option value="azul">Azul</option>
+                            </select>
+                        </div>
+                        <button class="comprar" data-nome="Baby Doll Azul F" data-preco="95.00">Adicionar</button>
+                    </div>
+					<!-- Final do Bloco aqui -->
+					<div class="produto">
+                        <img src="BabyAzulMarinho.jpeg" alt="Baby Doll Azul M">
+                        <h2>Baby Doll Azul M</h2>
+                        <p class="preco">R$ 95.00</p>
+                        <div class="size-selection">
+                            <label>Tamanho:</label>
+                            <select>
+								<option value="pp">PP</option>
+								<option value="p">P</option>
+								<option value="m">M</option>
+								<option value="g">G</option>
+								<option value="gg">GG</option>
+								<option value="xg">XG</option>
+								<option value="xgg">XGG</option>
+								<option value="eg">EG</option>
+								<option value="egg">EGG</option>
+                            </select>
+                        </div>
+                        <div class="color-selection">
+                            <label>Cores:</label>
+                            <select>
+                                <option value="azulmarinho">Azul Marinho</option>
+                            </select>
+                        </div>
+                        <button class="comprar" data-nome="Baby Doll Azul M" data-preco="95.00">Adicionar</button>
+                    </div>
+					<div class="produto">
+                        <img src="BabyBranco.jpeg" alt="Baby Doll Branco">
+                        <h2>Baby Doll Branco</h2>
+                        <p class="preco">R$ 95.00</p>
+                        <div class="size-selection">
+                            <label>Tamanho:</label>
+                            <select>
+								<option value="pp">PP</option>
+								<option value="p">P</option>
+								<option value="m">M</option>
+								<option value="g">G</option>
+								<option value="gg">GG</option>
+								<option value="xg">XG</option>
+								<option value="xgg">XGG</option>
+								<option value="eg">EG</option>
+								<option value="egg">EGG</option>
+                            </select>
+                        </div>
+                        <div class="color-selection">
+                            <label>Cores:</label>
+                            <select>
+                                <option value="branco">Branco</option>
+                            </select>
+                        </div>
+                        <button class="comprar" data-nome="Baby Doll Branco" data-preco="95.00">Adicionar</button>
+                    </div>
+					<!-- Final do Bloco aqui -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 W.K SexyShop. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/556792279577" id="whatsapp-button" target="_blank">
+        <img src="whatslogo.png" alt="WhatsApp Logo">
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Script para funcionamento das abas -->
+    <script>
+        function openTab(tabName) {
+            var i;
+            var x = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</body>
+</html>
