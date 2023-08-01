@@ -7,12 +7,11 @@
 
 /* Estilos gerais */
 body {
-  background-image: url('fundo-fotor.png'); /* Substitua pelo caminho correto da sua imagem */
-  background-size: cover; /* Faz com que a imagem cubra todo o viewport */
-  background-repeat: no-repeat; /* Impede que a imagem se repita */
-  background-position: center center; /* Centraliza a imagem */
-
-  background-color: #483D8B; /* Cor de fundo como fallback, para o caso da imagem não carregar ou ser transparente em alguma parte */
+  background-color: #483D8B;
+  background-image: url('fundo-fotor.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   font-family: Arial, sans-serif;
 }
 
@@ -25,47 +24,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Layout da página */
-header {
-	display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens verticalmente */
-    height: 200px;
-}
-
-h1 img {
-    height: 100px;
-    margin: 0; /* Remove a margem direita */
-}
-
-h1 {
-  font-size: 3rem;
-  display: flex;
-  align-items: center;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.busca {
-	width: 100%; /* Ocupa toda a largura do header */
-    display: flex;
-    justify-content: center; /* Centraliza a barra de busca */
-    margin-bottom: 10px; /* Espaço abaixo da barra de busca */
-}
-
-.busca input[type="text"] {
-  padding: 10px;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  font-size: 1.2rem;
-  width: 80%;
-}
-
 /* Estilo base para botões */
 button {
   transition: all 0.3s ease;
@@ -73,6 +31,7 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 button:hover {
@@ -85,13 +44,52 @@ button:active {
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-.busca button[type="submit"] {
+/* Layout da página */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+h1 {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+h1 img {
+  height: 100px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.busca {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.busca input[type="text"] {
   padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+.busca button[type="submit"] {
   background-color: #5f47a1;
   color: white;
   border-radius: 0 5px 5px 0;
   font-size: 1.2rem;
-  cursor: pointer;
 }
 
 .carrinho {
@@ -108,8 +106,6 @@ button:active {
 
 .carrinho ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .carrinho li {
@@ -142,10 +138,6 @@ button:active {
 .carrinho li .remover {
   color: red;
   cursor: pointer;
-}
-
-.carrinho li span:first-child {
-  color: black;
 }
 
 main {
@@ -197,6 +189,19 @@ main {
   font-size: 1.2rem;
 }
 
+.produto .favorito {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: gold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.produto .favorito:hover {
+  color: goldenrod;
+}
+
 footer {
   background-color: #4B0082;
   color: white;
@@ -209,33 +214,20 @@ footer p {
 }
 
 @media (min-width: 769px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .busca {
-        width: auto; /* Retira a largura total, adaptando-se ao conteúdo */
-        margin-bottom: 0; /* Remove o espaço abaixo da barra de busca */
-    }
+  .busca {
+    width: auto;
+    margin-bottom: 0;
+  }
 
-    h1 img {
-        margin-right: 700px; /* Retorna a margem direita */
-    }
-}
-
-.produto .favorito {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  color: gold;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.produto .favorito:hover {
-  color: goldenrod;
+  h1 img {
+    margin-right: 700px;
+  }
 }
 
 .product {
@@ -255,7 +247,6 @@ footer p {
     z-index: 1000; 
     border: none;
     background: none;
-    cursor: pointer;
 }
 
 #whatsapp-button img {
@@ -264,14 +255,6 @@ footer p {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); 
 }
 
-/* Estilos básicos */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilização das abas */
 .tabs {
     overflow: hidden;
     background-color: #4B0082;
@@ -286,19 +269,12 @@ body {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-    border-right: 1px solid #696969;
 }
 
 .tabs button:hover {
-    background-color: #ddd;
+    background-color: #4B0082;
 }
 
 .tabs button.active {
-    background-color: #555;
-    color: white;
+    background-color: #4B0082;
 }
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-. E o header deve ter 200px de altura, a imagem de H1 100px e a busca de 80% da largura.
