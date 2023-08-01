@@ -51,12 +51,15 @@ header {
   align-items: center;
   justify-content: center;
   height: 200px;
+  padding: 15px;
+  background-color: rgba(72, 61, 139, 0.7);  /* Adiciona transparência ao cabeçalho */
 }
 
 h1 {
   font-size: 3rem;
   display: flex;
   align-items: center;
+  color: #FFFFFF;
 }
 
 h1 img {
@@ -67,7 +70,7 @@ h1 img {
 h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: green;
+  color: #FFFFFF;
 }
 
 .busca {
@@ -98,10 +101,15 @@ h2 {
   position: absolute;
   top: 20px;
   right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .carrinho p {
   margin-right: 10px;
+  color: #333;  /* Cor mais escura para melhor leitura */
 }
 
 .carrinho ul {
@@ -116,6 +124,7 @@ h2 {
   border: 1px solid #ccc;
   margin-bottom: 5px;
   width: 200px;
+  border-radius: 5px; /* bordas arredondadas para os itens do carrinho */
 }
 
 .carrinho li:last-child {
@@ -154,26 +163,28 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #8A2BE2;
 }
 
 .produto {
   width: 30%;
   margin-bottom: 20px;
-  background-color: #4B0082;
+  background-color: rgba(75, 0, 130, 0.7); /* adiciona transparência ao background */
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
   position: relative;
+  border-radius: 8px;  /* bordas arredondadas para os produtos */
 }
 
 .produto img {
   max-width: 100%;
+  border-radius: 8px;  /* bordas arredondadas para as imagens dos produtos */
 }
 
 .produto h2 {
   margin-top: 10px;
   font-size: 1.2rem;
+  color: #FFFFFF;
 }
 
 .produto .preco {
@@ -203,7 +214,7 @@ main {
 }
 
 footer {
-  background-color: #4B0082;
+  background-color: rgba(75, 0, 130, 0.9);
   color: white;
   text-align: center;
   padding: 20px;
@@ -234,26 +245,28 @@ footer p {
     border: 1px solid #e0e0e0;
     padding: 10px;
     width: 200px;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .size-selection, .color-selection {
     margin-top: 10px;
-	color: white;
+    color: white;
 }
 
 #whatsapp-button {
     position: fixed;
     bottom: 40px;
     right: 20px;
-    z-index: 1000; 
+    z-index: 1000;
     border: none;
     background: none;
 }
 
 #whatsapp-button img {
-    width: 50px; 
+    width: 50px;
     height: auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;  /* torna o botão redondo */
 }
 
 .tabs {
@@ -270,6 +283,7 @@ footer p {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
+    border-radius: 8px;  /* bordas arredondadas para os botões de tabs */
 }
 
 .tabs button:hover {
