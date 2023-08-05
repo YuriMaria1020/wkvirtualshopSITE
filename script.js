@@ -55,12 +55,11 @@ function adicionarProduto() {
 }
 
 function atualizarCarrinho() {
-    const carrinho = document.querySelector('.carrinho');
-    const carrinhoVazio = document.querySelector('.carrinho-vazio');
+    const carrinho = document.querySelector('.carrinho ul');
     carrinho.innerHTML = '';
 
     if (produtosCarrinho.length === 0) {
-        carrinhoVazio.style.display = 'block';
+        carrinho.innerHTML = '<li>O carrinho está vazio.</li>';
         return;
     }
 
@@ -83,8 +82,6 @@ function atualizarCarrinho() {
         botaoComprarCarrinho.classList.add('comprarCarrinho');
         carrinho.appendChild(botaoComprarCarrinho);
     }
-
-    carrinhoVazio.style.display = 'none';
 }
 
 function removerProduto() {
@@ -114,6 +111,7 @@ document.addEventListener('click', event => {
 });
 
 const carrinho = document.querySelector('.carrinho');
+
 carrinho.addEventListener('click', event => {
     if (event.target.classList.contains('remover')) {
         removerProduto.call(event.target);
@@ -127,10 +125,10 @@ carrinho.addEventListener('change', event => {
 });
 
 function enviarMensagemWhatsApp() {
-    let mensagem = 'Olá, eu gostaria de comprar os seguintes itens:\n\n';
+    let mensagem = 'Olá, eu gostaria de comprar os seguintes itens:\\n\\n';
 
     produtosCarrinho.forEach(produto => {
-        mensagem += `${produto.nome} - R$ ${produto.preco}\nQuantidade: ${produto.quantidade}\nTamanho: ${produto.tamanho}\nCor: ${produto.cor}\n\n`;
+        mensagem += `${produto.nome} - R$ ${produto.preco}\\nQuantidade: ${produto.quantidade}\\nTamanho: ${produto.tamanho}\\nCor: ${produto.cor}\\n\\n`;
     });
 
     mensagem = encodeURIComponent(mensagem);
