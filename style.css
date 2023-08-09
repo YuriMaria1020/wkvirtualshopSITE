@@ -1,3 +1,22 @@
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .tabs button {
+        display: block; /* Faz os botões das abas ocuparem a largura total e empilhar verticalmente */
+        margin: 10px 0; /* Adiciona uma margem entre os botões */
+    }
+
+    .produtos {
+        flex-direction: column;
+    }
+
+    .produto {
+        width: 100%; /* Faz cada produto ocupar a largura total em dispositivos móveis */
+        margin-bottom: 20px;
+    }
+}
 /* Reset de estilos */
 * {
   box-sizing: border-box;
