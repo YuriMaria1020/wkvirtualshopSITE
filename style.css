@@ -95,57 +95,70 @@ h2 {
   font-size: 1.2rem;
 }
 
+/* Estilos para o carrinho */
 .carrinho {
-  display: flex;
-  align-items: center;
-  top: 20px;
-  right: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.carrinho p {
-  margin-right: 10px;
-  color: #333;  /* Cor mais escura para melhor leitura */
+    width: 80%;
+	color: #fff;
+    margin: 50px auto;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carrinho ul {
-  list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .carrinho li {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px;
-  background-color: white;
-  border: 1px solid #ccc;
-  margin-bottom: 5px;
-  width: 200px;
-  border-radius: 5px; /* bordas arredondadas para os itens do carrinho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .carrinho li:last-child {
-  margin-bottom: 0;
+    border-bottom: none;
 }
 
-.carrinho li .quantidade {
-  display: flex;
-  align-items: center;
+.carrinho .quantidade {
+    display: flex;
+    align-items: center;
 }
 
-.carrinho li .quantidade input {
-  width: 30px;
-  text-align: center;
-  border: none;
-  border-bottom: 1px solid #ccc;
-  margin: 0 5px;
+.carrinho .quantidade input {
+    width: 50px;
+    margin-right: 10px;
 }
 
-.carrinho li .remover {
-  color: red;
-  cursor: pointer;
+.carrinho .remover {
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.carrinho .remover:hover {
+    background-color: #d32f2f;
+}
+
+.comprarCarrinho {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.comprarCarrinho:hover {
+    background-color: #388E3C;
 }
 
 main {
@@ -238,13 +251,6 @@ footer p {
   h1 img {
     margin-right: 700px;
   }
-}
-
-.product {
-    border: 1px solid #e0e0e0;
-    padding: 10px;
-    width: 200px;
-    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .size-selection, .color-selection {
