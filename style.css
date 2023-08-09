@@ -5,17 +5,25 @@
 
     .tabs button {
         display: block; /* Faz os botões das abas ocuparem a largura total e empilhar verticalmente */
-        margin: 10px 0; /* Adiciona uma margem entre os botões */
+        margin: 5px 0; /* Adiciona uma margem entre os botões */
     }
 
     .produtos {
-        flex-direction: column;
+        flex-direction: flex;
     }
 
     .produto {
         width: 100%; /* Faz cada produto ocupar a largura total em dispositivos móveis */
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
+	
+	.produto .comprar {
+    background-color: #5f47a1;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+	}
+
 }
 /* Reset de estilos */
 * {
@@ -90,28 +98,6 @@ h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
   color: #FFFFFF;
-}
-
-.busca {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.busca input[type="text"] {
-  padding: 10px;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  font-size: 1.2rem;
-  width: 80%;
-}
-
-.busca button[type="submit"] {
-  background-color: #5f47a1;
-  color: white;
-  border-radius: 0 5px 5px 0;
-  font-size: 1.2rem;
 }
 
 /* Estilos para o carrinho */
