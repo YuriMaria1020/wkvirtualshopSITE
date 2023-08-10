@@ -9,12 +9,13 @@
     }
 
     .produtos {
-        flex-direction: flex;
+        flex-direction: flex;  /* Ajusta para column */
+        flex-wrap: wrap;  /* Adiciona wrap */
     }
 
-    .produto {
-        width: 100%; /* Faz cada produto ocupar a largura total em dispositivos móveis */
-        margin-bottom: 5px;
+    .produto .comprar {
+        font-size: 1rem;  /* Diminui o tamanho da fonte */
+        padding: 2px 4px;  /* Ajusta o padding para ser um pouco menor */
     }
 	
 	.produto .comprar {
@@ -23,6 +24,77 @@
     cursor: pointer;
     font-size: 1.2rem;
 	}
+	
+	
+	.carrinho {
+    width: 80%;
+	color: #fff;
+    margin: 50px auto;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.carrinho ul {
+    margin: 5;
+    padding: 0;
+	}
+
+	.carrinho li {
+    display: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+	}
+
+	.carrinho li:last-child {
+    border-bottom: none;
+	}
+
+	.carrinho .quantidade {
+    display: flex;
+    align-items: center;
+	}
+
+	.carrinho .quantidade input {
+    width: 50px;
+    margin-right: 10px;
+	}
+
+	.carrinho .remover {
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+	}
+
+	.carrinho .remover:hover {
+    background-color: #d32f2f;
+	}
+
+	.comprarCarrinho {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+	}
+
+	.comprarCarrinho:hover {
+    background-color: #388E3C;
+	}
+	
+	
+
+
+
 
 }
 /* Reset de estilos */
@@ -286,7 +358,7 @@ footer p {
 
 .tabs button {
     background-color: #8A2BE2;
-    float: left;
+    float: lef;
     border: none;
     outline: none;
     cursor: pointer;
