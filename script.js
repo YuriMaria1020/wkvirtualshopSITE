@@ -117,7 +117,7 @@ function enviarMensagemWhatsApp() {
     });
 
     mensagem = encodeURIComponent(mensagem);
-    window.open(`https://wa.me/556792279577?text=${mensagem}`);
+    window.open(`https://wa.me/556791910977?text=${mensagem}`);
 }
 
 function saveToLocalStorage() {
